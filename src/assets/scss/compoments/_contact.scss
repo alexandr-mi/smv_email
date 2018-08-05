@@ -1,0 +1,39 @@
+.contact {
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+  .contact__item-email {
+    float: right;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      float: left !important;
+    }
+  }
+
+  &__text-title {
+    text-align: left;
+  }
+
+  &__link {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    vertical-align: middle !important;
+  }
+
+  .contact__icon {
+    width: 13px !important;
+    height: 13px !important;
+    vertical-align: middle !important;
+    padding: 0 9px 0 0 !important;
+  }
+
+  .contact__icon-big {
+    margin-bottom: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    vertical-align: middle !important;
+    padding: 0 12px 0 0 !important;
+  }
+}

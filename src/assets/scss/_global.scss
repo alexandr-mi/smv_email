@@ -1,0 +1,80 @@
+// Body Styles
+body,
+html,
+.body {
+  background: $white !important;
+  //max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.width-560 {
+  width: 93% !important;
+  margin: 0;
+}
+
+.background-gray {
+  background: $light-gray;
+}
+
+
+ol {
+  margin: 0;
+  padding-left: 49px;
+}
+li {
+  padding-left: 10px;
+}
+.small-show {
+  display: none;
+}
+
+.link_blue {
+  color: $link-color !important;
+}
+
+.link_blue:hover {
+  color: $link-color-preset !important;
+}
+
+.link_blue:visited {
+  color: $link-color-visited !important;
+}
+
+.container-big {
+  width: 600px !important;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+  .columns-big {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    &.columns-big-padding {
+      &.first {
+        padding-right: 10px !important;
+      }
+      &.last {
+        padding-left: 10px !important;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 620px) {
+  .container-big {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    .columns-big {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      &.columns-big-padding {
+        &.first {
+          padding-right: 20px !important;
+        }
+        &.last {
+          padding-left: 20px !important;
+        }
+      }
+    }
+  }
+}

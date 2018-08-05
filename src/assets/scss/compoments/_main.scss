@@ -1,0 +1,68 @@
+.main {
+  &__text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+  }
+
+  &__title-big {
+    font-size: 20px;
+    font-weight: 300 !important;
+  }
+
+  &__title-features {
+    font-size: 16px !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+  }
+
+  &__text-features {
+    padding-left: 0 !important;
+    font-size: 14px !important;
+    list-style-type: none;
+    line-height: 29px !important;
+
+    li {
+      padding: 0;
+    }
+    .bullet {
+      font-size: 28px;
+      vertical-align: middle;
+      padding: 0 24px 0 0;
+      color: $link-color;
+    }
+  }
+
+  &__text-card_title {
+    font-size: 16px !important;
+  }
+
+  &__text-price_big {
+    font-size: 20px !important;
+    font-weight: 700;
+    color: #322C48;
+  }
+  &__images {
+    width: 100% !important;
+  }
+  &__button a {
+    letter-spacing: 1.5px;
+  }
+
+  &__text-secondary {
+    color: $secondary-font-color;
+  }
+}
+.news {
+  .main {
+    &__title {
+      letter-spacing: 0px;
+      margin: 0;
+    }
+    &__text {
+      font-size: 14px;
+      color: #585858;
+      letter-spacing: 0px;
+    }
+  }
+}

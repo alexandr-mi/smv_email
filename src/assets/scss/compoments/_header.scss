@@ -1,0 +1,55 @@
+// Full Width Headers
+.header {
+
+  .columns {
+    padding-bottom: 0;
+  }
+  &__logo {
+    vertical-align: middle;
+  }
+
+  .header__logo_img {
+    width: 160px !important;
+    @media only screen and (max-width: 579px) {
+      width: 160px !important;
+    }
+  }
+  .header__logo_empty {
+    width: auto !important;
+  }
+
+  &__logo img {
+    width: 100%;
+  }
+
+  &__phone tr{
+    text-align: right !important;
+  }
+
+  &__phone_wrap {
+    width: auto !important;
+    float: right;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      float: left !important;
+    }
+  }
+
+  &__phone_icon {
+    width: 15px !important;
+    vertical-align: middle !important;
+    padding: 0 9px 5px 0;
+  }
+
+  &__phone_icon img {
+    //@media only screen and (max-width: #{$global-breakpoint}) {
+    //  //margin-left: 20px;
+    //}
+  }
+
+  &__phone_link {
+    text-align: right !important;
+    color: $purple-color;
+    font-size: 19px;
+    vertical-align: middle !important;
+  }
+}
