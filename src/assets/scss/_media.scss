@@ -1,15 +1,14 @@
-
 @media only screen and (max-width: #{$global-breakpoint}) {
 
   table.container {
-    width:100% !important;
+    width: 100% !important;
   }
 
   .width-560 {
     width: 100% !important;
   }
 
-  .header__logo p{
+  .header__logo p {
     padding-top: 37px;
     padding-bottom: 20px !important;
   }
@@ -19,7 +18,7 @@
     margin-left: 20px !important;
   }
 
-  .header__phone th{
+  .header__phone th {
     text-align: left !important;
   }
 
@@ -28,15 +27,11 @@
     margin-left: 20px !important;
   }
 
-  .contact__messenger {
-    margin-left: 20px !important;
-  }
-
-  .contact__icon-skype, .contact__icon-telegram  {
+  .contact__icon-skype, .contact__icon-telegram {
     width: 40px !important;
   }
 
-    .contact__icon-wapp, .contact__icon-viber  {
+  .contact__icon-wapp, .contact__icon-viber {
     width: 40px !important;
   }
 
@@ -61,14 +56,20 @@
 }
 
 @media only screen and (max-width: 440px) {
-  .service__text {
-      font-size: 16px !important;
-    }
+  .service__link {
 
-  .service__icon {
-      width: 60px !important;
-      height: 60px !important;
+    font-size: 16px !important;
+    span {
+      line-height: 60px !important;
     }
+    &-cure span {
+      line-height: 60px !important;
+    }
+    img {
+      width: 60px !important;
+    }
+  }
+
   .contact__icon img {
     width: 13px !important;
   }
@@ -79,13 +80,18 @@
 }
 
 @media only screen and (max-width: 380px) {
-  .service__text {
-    font-size: 14px !important;
-  }
+  .service__link {
 
-  .service__icon {
-    width: 50px !important;
-    height: 50px !important;
+    font-size: 14px !important;
+    span {
+      line-height: 50px !important;
+    }
+    &-cure span {
+      line-height: 50px !important;
+    }
+    img {
+      width: 50px !important;
+    }
   }
 
   .contact__icon img {

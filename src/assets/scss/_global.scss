@@ -41,32 +41,29 @@ li {
   color: $link-color-visited !important;
 }
 
-.container-big {
-  width: 600px !important;
-  margin-left: -20px !important;
-  margin-right: -20px !important;
+table.container-big {
+  width: 600px;
+  margin: 0 -20px 0 -20px !important;
   .columns-big {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding-left: 40px;
+    padding-right: 40px;
     &.columns-big-padding {
       &.first {
-        padding-right: 10px !important;
+        padding-right: 10px;
       }
       &.last {
-        padding-left: 10px !important;
+        padding-left: 10px;
       }
     }
   }
-
 }
+
 @media only screen and (max-width: 620px) {
-  .container-big {
+  table.container-big.container {
     width: 100% !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin: 0 -20px 0 -20px !important;
     .columns-big {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      padding: 0 20px 0 20px !important;
       &.columns-big-padding {
         &.first {
           padding-right: 20px !important;

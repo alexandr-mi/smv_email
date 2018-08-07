@@ -28,4 +28,28 @@
     padding-top: 6px;
     vertical-align: middle !important;
   }
+
+  &__link {
+    img {
+      //float: left;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span {
+      //float: left;
+      //line-height: 78px;
+      vertical-align: middle;
+    }
+    &-cure span {
+      //line-height: 85px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.service__text-equipment {
+  img {
+    width: 80px;
+  }
 }

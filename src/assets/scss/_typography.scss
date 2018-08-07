@@ -7,12 +7,19 @@ h2 {
   letter-spacing: 0.7px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 hr {
   color: #F1F0F2 !important;
   border: none !important;
   border-top: 1px solid #F1F0F2 !important;
+  margin: 0;
+}
+
+hr.hr-light {
+  color: #F1F0F2 !important;
+  border: none !important;
+  border-top: 1px solid #ffffff !important;
   margin: 0;
 }

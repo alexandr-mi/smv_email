@@ -16,21 +16,81 @@
     font-weight: 300 !important;
   }
 
-  &__text-features {
-    padding-left: 0 !important;
-    font-size: 14px !important;
-    list-style-type: none;
-    line-height: 29px !important;
+  &__order_info_card_wrap {
 
-    li {
+    th.hr {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+
+    th.main__order_info_card {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+  }
+  &__order_info_card_columns {
+
+    &.columns.first {
+      padding-left: 10px;
+    }
+    &.columns.last {
+      padding-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .main__order_info_cards_wrap {
+      th.main__order_info_card {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+  }
+
+  &__text-features {
+    padding-left: 10px;
+
+    p {
       padding: 0;
+      font-size: 14px !important;
+      list-style-type: none;
+      line-height: 29px !important;
+      letter-spacing: 0.1px;
     }
     .bullet {
-      font-size: 28px;
+      font-size: 23px;
       vertical-align: middle;
-      padding: 0 24px 0 0;
       color: $link-color;
     }
+  }
+
+  &__table_head p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  &__table_body p {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 19px;
+  }
+  &__text-title_info_card {
+    letter-spacing: -0.8px;
+    font-weight: 700;
+  }
+
+  &__table {
+    .wrapper-inner {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+  &__text_info_card {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 21px;
   }
 
   &__text-card_title {
@@ -52,7 +112,17 @@
   &__text-secondary {
     color: $secondary-font-color;
   }
+  .order__quantity_text_big {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .order__quantity_text_small {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+  }
 }
+
 .news {
   .main {
     &__title {

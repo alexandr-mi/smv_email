@@ -20,6 +20,7 @@
     font-size: 14px;
     letter-spacing: 0.4px;
     vertical-align: middle !important;
+    width: auto;
   }
 
   .contact__icon {
@@ -35,5 +36,42 @@
     height: 32px !important;
     vertical-align: middle !important;
     padding: 0 12px 0 0 !important;
+  }
+}
+
+th.contact__messenger {
+  &.first {
+    padding-right: 0 ;
+    padding-left: 25px ;
+  }
+  &.last {
+    padding-left: 0 ;
+    padding-right: 34px ;
+  }
+}
+.contact__link-messenger {
+  img {
+    display: inline-block !important;
+    vertical-align: middle;
+    //float: left;
+  }
+  span {
+    line-height: 33px;
+  }
+}
+
+
+.contact__link-top {
+  img {
+    display: inline-block !important;
+    vertical-align: middle;
+    //float: left;
+    &.contact__link_img-email {
+      vertical-align: middle;
+    }
+  }
+  span {
+    //float: left;
+    line-height: 1;
   }
 }
