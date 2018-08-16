@@ -1,39 +1,34 @@
 @media only screen and (max-width: #{$global-breakpoint}) {
+  table.body .columns,
+  table.body .column {
+    height: auto !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 
+    // Nested columns won't double the padding
+    .column,
+    .columns {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
   table.container {
     width: 100% !important;
-  }
-
-  .width-560 {
-    width: 100% !important;
-  }
-
-  .header__logo p {
-    padding-top: 37px;
-    padding-bottom: 20px !important;
-  }
-  .header__phone_link {
-    padding-top: 0px !important;
-    text-align: left !important;
-    margin-left: 20px !important;
   }
 
   .header__phone th {
     text-align: left !important;
   }
 
+
   .contact__text {
     text-align: left !important;
     margin-left: 20px !important;
   }
 
-  .contact__icon-skype, .contact__icon-telegram {
-    width: 40px !important;
-  }
-
-  .contact__icon-wapp, .contact__icon-viber {
-    width: 40px !important;
-  }
 
   .small-show {
     display: table !important;
@@ -43,21 +38,37 @@
     display: none;
   }
 
-  .header__phone_icon img {
-    width: 15px !important;
-  }
-  .contact__icon img {
-    width: 13px !important;
+  .main__table_head p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0px;
   }
 
-  .contact__icon-big img {
-    width: 32px !important;
+  .main__table_body p {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 19px;
+  }
+
+  table.body .main__order_info_card.columns, table.body .main__order_info_card_columns .th.columns  {
+    padding: 0 20px 0 20px !important;
+  }
+
+  .main__table {
+    .wrapper-inner {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+  table .main__table {  
+    .columns {
+      padding: 0 20px 0 20px !important;
+    }
   }
 }
 
 @media only screen and (max-width: 440px) {
   .service__link {
-
     font-size: 16px !important;
     span {
       line-height: 60px !important;
@@ -69,19 +80,31 @@
       width: 60px !important;
     }
   }
-
-  .contact__icon img {
-    width: 13px !important;
-  }
-
-  .contact__icon-big img {
-    width: 32px !important;
+}
+@media only screen and (max-width: 400px) {
+  table.main__table .columns, table.main__table .column {
+    padding: 0 10px 0 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
-
 @media only screen and (max-width: 380px) {
-  .service__link {
+  .main__table_head p {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
 
+  .main__table_body p {
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    &.main__table_price {
+      font-size: 10px;
+    }
+  }
+
+  .service__link {
     font-size: 14px !important;
     span {
       line-height: 50px !important;
@@ -92,13 +115,5 @@
     img {
       width: 50px !important;
     }
-  }
-
-  .contact__icon img {
-    width: 13px !important;
-  }
-
-  .contact__icon-big img {
-    width: 32px !important;
   }
 }

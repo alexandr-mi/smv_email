@@ -1,28 +1,30 @@
 .header {
+  width:93%;
+  
+  &__logo, &__phone {
+    padding: 0 20px 0 20px !important;
+  }
   &__phone tr{
     text-align: right !important;
   }
 
 
   &__phone {
-
     th {
-      text-align: right !important;
+      text-align: right;
     }
 
     &_link {
 
+      color: $purple-color;
+      font-size: 19px;
       img {
-        //float: left;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
       }
       span {
         line-height: 15px;
       }
-      text-align: right !important;
-      color: $purple-color;
-      font-size: 19px;
     }
   }
 

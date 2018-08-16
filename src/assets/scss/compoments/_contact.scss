@@ -1,77 +1,101 @@
 .contact {
-  &__text {
-    text-align: center;
-    font-size: 14px;
-    line-height: 35px;
-  }
+	&__label {
+		padding-right: 0 !important;
+	}
+	&__text {
+		text-align: center;
+		font-size: 14px;
+		line-height: 35px;
+	}
 
-  .contact__item-email {
-    float: right;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      float: left !important;
-    }
-  }
+	.contact__item-email {
+		float: right;
+		@media only screen and (max-width: #{$global-breakpoint}) {
+			float: left !important;
+		}
+	}
+	.service__item {
+		padding-left: 0;
+	}
+	&__text-title {
+		text-align: left;
+	}
 
-  &__text-title {
-    text-align: left;
-  }
+	&__link {
+		font-size: 14px;
+		letter-spacing: 0.4px;
+		vertical-align: middle !important;
+		width: auto;
+	}
 
-  &__link {
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    vertical-align: middle !important;
-    width: auto;
-  }
+	.contact__icon {
+		width: 13px !important;
+		height: 13px !important;
+		vertical-align: bottom !important;
+		padding: 0 9px 0 0 !important;
+	}
 
-  .contact__icon {
-    width: 13px !important;
-    height: 13px !important;
-    vertical-align: middle !important;
-    padding: 0 9px 0 0 !important;
-  }
+	.contact__icon-big {
+		margin-bottom: 0 !important;
+		width: 32px !important;
+		height: 32px !important;
+		vertical-align: middle !important;
+		padding: 0 12px 0 0 !important;
+	}
 
-  .contact__icon-big {
-    margin-bottom: 0 !important;
-    width: 32px !important;
-    height: 32px !important;
-    vertical-align: middle !important;
-    padding: 0 12px 0 0 !important;
-  }
+	.contact__letter_space {
+		&--viber {
+			letter-spacing: 8px;
+		}
+
+		&--telegram {
+			letter-spacing: 6px;
+		}
+
+		&--wapp {
+			letter-spacing: 3px;
+		}
+
+		&--skype {
+			letter-spacing: 7px;
+		}
+	}
+
 }
 
 th.contact__messenger {
-  &.first {
-    padding-right: 0 ;
-    padding-left: 25px ;
-  }
-  &.last {
-    padding-left: 0 ;
-    padding-right: 34px ;
-  }
-}
-.contact__link-messenger {
-  img {
-    display: inline-block !important;
-    vertical-align: middle;
-    //float: left;
-  }
-  span {
-    line-height: 33px;
-  }
+	&.first {
+		padding-right: 0;
+		padding-left: 45px;
+	}
+	&.last {
+		padding-left: 0;
+		padding-right: 52px;
+	}
 }
 
+.contact__link-messenger {
+	img {
+		display: inline-block !important;
+		vertical-align: middle;
+		//float: left;
+	}
+	span {
+		line-height: 33px;
+	}
+}
 
 .contact__link-top {
-  img {
-    display: inline-block !important;
-    vertical-align: middle;
-    //float: left;
-    &.contact__link_img-email {
-      vertical-align: middle;
-    }
-  }
-  span {
-    //float: left;
-    line-height: 1;
-  }
+	img {
+		display: inline-block !important;
+		vertical-align: middle;
+		//float: left;
+		&.contact__link_img-email {
+			vertical-align: middle;
+		}
+	}
+	span {
+		//float: left;
+		line-height: 1;
+	}
 }

@@ -1,5 +1,8 @@
 .service {
-
+  width: 93%;
+  .service__item {
+    padding: 0 20px 0 20px !important;
+  }
   &__item {
     padding-bottom: 0 !important;
   }

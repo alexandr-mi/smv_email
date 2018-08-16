@@ -2,29 +2,27 @@
 body,
 html,
 .body {
-  background: $white !important;
-  //max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
 
-.width-560 {
-  width: 93% !important;
-  margin: 0;
+.body .container{
+  background: white;
 }
 
 .background-gray {
-  background: $light-gray;
+  background: $dark-gray;
 }
-
 
 ol {
   margin: 0;
   padding-left: 49px;
 }
+
 li {
   padding-left: 10px;
 }
+
 .small-show {
   display: none;
 }
